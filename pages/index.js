@@ -28,6 +28,11 @@ export default function Home({ blog }) {
                   <Link href={`blog/${blog.id}`}>
                      {blog.title}
                   </Link>
+                  <img
+                     src={blogItem.mainImage.url}
+                     alt={blogItem.mainImage.alt}
+                     className={styles.mainImage}
+                  />
                </li>
             ))}
          </div>
